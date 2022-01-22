@@ -23,7 +23,7 @@ COMMANDS:
    help, h    Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
-   --projectID value, -p value  GCPのプロジェクトIDを指定する (default: "cloud-gaming-p1ass") [$CLOUD_GAMING_OPERATOR_PROJECT_ID]
+   --projectID value, -p value  GCPのプロジェクトIDを指定する [$CLOUD_GAMING_OPERATOR_PROJECT_ID]
    --region value               GCPのリージョンを指定する (デフォルト: asia-northeast1) [$CLOUD_GAMING_OPERATOR_REGION]
    --zone value                 GCPのプロジェクトIDを指定する (デフォルト: asia-northeast1-a) [$CLOUD_GAMING_OPERATOR_ZONE]
    --help, -h                   show help (default: false)
