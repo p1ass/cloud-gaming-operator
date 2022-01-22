@@ -14,17 +14,18 @@ NAME:
    cloud-gaming-operator - GCEに立てているクラウドゲーミング用のインスタンスを管理するCLIツール
 
 USAGE:
-   main [global options] command [command options] [arguments...]
+   cloud-gaming-operator [global options] command [command options] [arguments...]
 
 COMMANDS:
    list, l    現在起動中のインスタンスを表示する。
-   create, c  インスタンスを起動する。すでに起動している場合は何もしない。
-   remove, r  マシーンイメージを作成して、インスタンスを削除する。
+   create, c  マシンイメージからインスタンスを起動する。すでに起動している場合は何もしない。
+   remove, r  マシーンイメージを作成して、起動中のインスタンスを削除する。
    help, h    Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
-   --projectID value, -p value  GCPのプロジェクトIDを指定する [$CLOUD_GAMING_OPERATOR_PROJECT_ID]
+   --projectID value, -p value  GCPのプロジェクトIDを指定する (default: "cloud-gaming-p1ass") [$CLOUD_GAMING_OPERATOR_PROJECT_ID]
    --region value               GCPのリージョンを指定する (デフォルト: asia-northeast1) [$CLOUD_GAMING_OPERATOR_REGION]
    --zone value                 GCPのプロジェクトIDを指定する (デフォルト: asia-northeast1-a) [$CLOUD_GAMING_OPERATOR_ZONE]
    --help, -h                   show help (default: false)
+
 ```

@@ -62,7 +62,7 @@ func main() {
 			{
 				Name:    "create",
 				Aliases: []string{"c"},
-				Usage:   "インスタンスを起動する。すでに起動している場合は何もしない。",
+				Usage:   "マシンイメージからインスタンスを起動する。すでに起動している場合は何もしない。",
 				Action: func(c *cli.Context) error {
 					setGCPConfig(c)
 					return createInstanceFromMachineImage(computeService)
@@ -71,7 +71,7 @@ func main() {
 			{
 				Name:    "remove",
 				Aliases: []string{"r"},
-				Usage:   "マシーンイメージを作成して、インスタンスを削除する。",
+				Usage:   "マシーンイメージを作成して、起動中のインスタンスを削除する。",
 				Action: func(c *cli.Context) error {
 					setGCPConfig(c)
 					return createMachineImageAndRemoveInstance(computeService)
