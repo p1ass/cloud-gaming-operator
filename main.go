@@ -163,7 +163,8 @@ func createMachineImageAndRemoveInstance(service *compute.Service) error {
 	}
 
 	if len(list.Items) == 0 {
-		return errors.New("起動しているインスタンスはありません")
+		fmt.Println("起動しているインスタンスはありません")
+		return nil
 	}
 	if len(list.Items) != 1 {
 		return errors.New("複数台のインスタンスが起動しています。複数台インスタンスの操作は対応していません。コンソールから削除してください")
